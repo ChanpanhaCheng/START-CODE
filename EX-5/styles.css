@@ -1,0 +1,58 @@
+body{
+    font-family: system-ui,sans-serif;
+    font-size: 1rem;
+    line-height: 1,7;
+    color: chocolate;
+    background-color: burlywood;
+   
+
+}
+h1{
+    font-size: 1.875rem;
+    line-height: 1.25;
+}
+h2{
+    font-size: 0.975rem;
+}
+.dash-board-header{
+    
+    padding: 1rem;
+}
+.dash-board-main{
+    display: grid;
+    
+    padding: 1.5 rem;
+    grid: 1rem;
+}
+@media(width>768px){
+    .dash-board-main{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+.dash{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: coral;
+    min-block-size: 6rem;
+    margin: 1rem;
+}
+.card-1{
+    background-image: 
+    linear-gradient(
+        62deg,
+        #fbab7e 0%,#f7ce68 100%
+    );
+}
+@media (width>758px){
+    .card-1{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+}
+@media(width>992px){
+    .car-2,.car-3,.car-4.car-5,.car-6,.car-7,.car-8.car-9,.car-10,.car-11{
+        grid-area: auto;
+    }
+}
